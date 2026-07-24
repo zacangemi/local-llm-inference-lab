@@ -1,4 +1,4 @@
-# Local LLM Inference Lab — Benchmarking vLLM, llama.cpp & Agentic Workloads
+# Local LLM Inference Lab — Multi-Model Benchmarking with vLLM, llama.cpp & Agentic Workloads
 
 > How far can 48 GB of VRAM go?
 
