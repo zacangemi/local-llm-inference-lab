@@ -1,0 +1,9 @@
+concurrency,kv,ttft_ms,tpot_ms,itl_ms,e2e_ms,serve_tokens_s,requests_s,status
+1,BF16,950.31,20.29,20.30,3527.32,36.30,0.284,measured campaign evidence
+2,BF16,1002.95,29.27,22.05,4720.23,54.28,0.424,measured campaign evidence
+4,BF16,2814.97,30.28,22.91,6685.33,76.67,0.599,measured campaign evidence
+8,BF16,3733.08,53.76,24.63,10594.27,96.70,0.755,measured campaign evidence
+1,FP8 E4M3,951.31,20.42,20.42,3543.83,36.13,0.282,measured campaign evidence
+2,FP8 E4M3,1005.23,29.35,22.12,4733.13,54.14,0.423,measured campaign evidence
+4,FP8 E4M3,2820.71,30.32,22.92,6696.58,76.54,0.598,measured campaign evidence
+8,FP8 E4M3,3742.28,53.72,24.51,10598.73,96.66,0.755,measured campaign evidence

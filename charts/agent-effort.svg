@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+<title id="title">Agent output-token effort</title>
+<desc id="desc">Log-scaled Surf and Digital Twin output-token effort by model.</desc>
+<rect width="1200" height="690" rx="24" fill="#08111f"/>
+<text x="50" y="55" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="30" font-weight="850" text-anchor="start">The cost of trying to finish</text>
+<text x="50" y="84" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="500" text-anchor="start">Output tokens across multi-request build-agent sessions · logarithmic scale.</text>
+<text x="45" y="175" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="750" text-anchor="start">GPT-OSS-120B</text>
+<rect x="300" y="135" width="547.2" height="30" rx="7" fill="#38bdf8"/>
+<text x="857.2204213088521" y="156" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">5,074</text>
+<text x="280" y="156" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Surf</text>
+<rect x="300" y="181" width="548.3" height="30" rx="7" fill="#a78bfa"/>
+<text x="858.2611004444727" y="202" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">5,157</text>
+<text x="280" y="202" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Twin</text>
+<text x="45" y="295" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="750" text-anchor="start">Laguna S 2.1</text>
+<rect x="300" y="255" width="755.0" height="30" rx="7" fill="#38bdf8"/>
+<text x="1065.0214691984675" y="276" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">129,544</text>
+<text x="280" y="276" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Surf</text>
+<rect x="300" y="301" width="674.6" height="30" rx="7" fill="#a78bfa"/>
+<text x="984.6409494652783" y="322" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">36,995</text>
+<text x="280" y="322" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Twin</text>
+<text x="45" y="415" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="750" text-anchor="start">Qwen3.6-27B-FP8</text>
+<rect x="300" y="375" width="722.7" height="30" rx="7" fill="#38bdf8"/>
+<text x="1032.6681125689704" y="396" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">78,225</text>
+<text x="280" y="396" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Surf</text>
+<rect x="300" y="421" width="735.7" height="30" rx="7" fill="#a78bfa"/>
+<text x="1045.6899947907405" y="442" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">95,834</text>
+<text x="280" y="442" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Twin</text>
+<text x="45" y="535" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="750" text-anchor="start">Step 3.7 Flash</text>
+<rect x="300" y="495" width="679.1" height="30" rx="7" fill="#38bdf8"/>
+<text x="989.0797862029225" y="516" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">39,646</text>
+<text x="280" y="516" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Surf</text>
+<rect x="300" y="541" width="745.1" height="30" rx="7" fill="#a78bfa"/>
+<text x="1055.0872918926125" y="562" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700" text-anchor="start">110,956</text>
+<text x="280" y="562" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="650" text-anchor="end">Twin</text>
+<text x="600" y="635" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="middle">More output was not automatically better: Laguna and Step spent heavily without shipping the requested products.</text>
+</svg>

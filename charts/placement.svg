@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+<title id="title">Hybrid model placement</title>
+<desc id="desc">Stacked model-buffer placement across GPU zero, GPU one, and host memory.</desc>
+<rect width="1200" height="680" rx="24" fill="#08111f"/>
+<text x="50" y="55" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="30" font-weight="850" text-anchor="start">Where the large models actually lived</text>
+<text x="50" y="84" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="500" text-anchor="start">Main model buffers only; sidecars and KV are annotated separately in the data.</text>
+<text x="45" y="172" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="700" text-anchor="start">Laguna S 2.1</text>
+<rect x="300.0" y="145" width="119.2" height="38" fill="#38bdf8"/>
+<text x="359.5866648" y="170" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">19.7</text>
+<rect x="419.2" y="145" width="114.8" height="38" fill="#a78bfa"/>
+<text x="476.56577599999997" y="170" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">18.9</text>
+<rect x="534.0" y="145" width="180.4" height="38" fill="#fbbf24"/>
+<text x="624.1540399999999" y="170" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">29.8</text>
+<text x="1120" y="172" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="end">68.4 GiB</text>
+<text x="45" y="284" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="700" text-anchor="start">Step 3.7 Flash · vanilla</text>
+<rect x="300.0" y="257" width="117.5" height="38" fill="#38bdf8"/>
+<text x="358.7285608" y="282" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">19.4</text>
+<rect x="417.5" y="257" width="115.4" height="38" fill="#a78bfa"/>
+<text x="475.1487352" y="282" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">19.0</text>
+<rect x="532.8" y="257" width="457.1" height="38" fill="#fbbf24"/>
+<text x="761.4123776" y="282" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">75.4</text>
+<text x="1120" y="284" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="end">113.8 GiB</text>
+<text x="45" y="396" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="700" text-anchor="start">Step 3.7 Flash · MTP-only</text>
+<rect x="300.0" y="369" width="117.5" height="38" fill="#38bdf8"/>
+<text x="358.7285608" y="394" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">19.4</text>
+<rect x="417.5" y="369" width="90.3" height="38" fill="#a78bfa"/>
+<text x="462.58317999999997" y="394" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">14.9</text>
+<rect x="507.7" y="369" width="482.3" height="38" fill="#fbbf24"/>
+<text x="748.846852" y="394" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">79.6</text>
+<text x="1120" y="396" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="end">113.8 GiB</text>
+<text x="45" y="508" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="700" text-anchor="start">Step 3.7 Flash · vision-only</text>
+<rect x="300.0" y="481" width="90.5" height="38" fill="#38bdf8"/>
+<text x="345.2413504" y="506" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">14.9</text>
+<rect x="390.5" y="481" width="111.5" height="38" fill="#a78bfa"/>
+<text x="446.21035439999997" y="506" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">18.4</text>
+<rect x="501.9" y="481" width="488.0" height="38" fill="#fbbf24"/>
+<text x="745.9612368" y="506" fill="#08111f" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="800" text-anchor="middle">80.5</text>
+<text x="1120" y="508" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="end">113.8 GiB</text>
+<rect x="360" y="610" width="16" height="16" rx="3" fill="#38bdf8"/>
+<text x="384" y="623" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="start">GPU 0</text>
+<rect x="550" y="610" width="16" height="16" rx="3" fill="#a78bfa"/>
+<text x="574" y="623" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="start">GPU 1</text>
+<rect x="740" y="610" width="16" height="16" rx="3" fill="#fbbf24"/>
+<text x="764" y="623" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="650" text-anchor="start">Host memory</text>
+</svg>

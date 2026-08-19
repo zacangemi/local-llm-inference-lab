@@ -1,0 +1,43 @@
+
+
+**Title:** The Blackwater Ridge Loop doesn't like steady footsteps
+
+**Posted by u/cedarline_survey**
+
+I went into the Cedar Hollow State Forest on October 18th to map the old boundary markers along the Blackwater Ridge Loop. It’s a three-point-two mile trail with an elevation gain of roughly seven hundred feet, mostly through dense hemlock and white spruce. The trailhead is gravel, the first mile is open pine, and after the second mile the canopy closes so tight you lose the sky around ten in the morning. I started at 8:15 a.m. The weather was clear, forty-two degrees, light wind from the northwest. I had my standard gear: a forty-liter pack, a handheld GPS, a folding rangefinder, a headlamp with a fresh CR123 battery, and a thermos of black coffee. I was alone. I always am when I’m doing boundary surveys.
+
+The first two miles were routine. I was marking coordinates, checking for encroachment on the old logging easements, keeping a steady surveyor’s pace. You learn to walk evenly out there. It saves time, it keeps your breathing level, and it makes your GPS track look clean. By 10:40 a.m. I’d passed the second mile marker. The light was already dropping. Under that kind of canopy, dusk doesn’t roll in; it just arrives. I switched my headlamp to a low white beam around 11:15 a.m. to read the brass plates on the trees. The forest was quiet. Not dead quiet, just the normal muffled quiet you get when the trees soak up the sound.
+
+That’s when I first noticed the rhythm.
+
+I was walking at a consistent three-second step, left, right, pause to check the GPS, left, right, pause. The dead leaves underfoot made a dry, crisp sound. At first, I just heard my own footsteps echoing back from a rock face or a dense thicket. That happens. The acoustics in the hollows are weird. Sound bounces off the trunks, carries sideways, comes back to you a half-second late. But then I realized the echo wasn’t bouncing. It was pacing.
+
+I stopped to adjust my pack strap. The sound stopped.
+
+I took three steps forward. The sound took three steps.
+
+I slowed to a shuffle. The sound shuffled.
+
+I told myself it was a deer. Or a hiker who’d cut across the ridge and was following the same game trail. The Blackwater Loop gets traffic, even in October. People hike it for the quiet. I kept walking, but I started listening harder. The cadence was perfect. Too perfect. It matched my stride exactly, but it didn’t sound like it was behind me. It sounded like it was beside me, just out of the headlamp beam, maybe three feet to my left in the thick brush. I swung the light left. Nothing but ferns, fallen branches, and the dark trunks of spruce trees. I swung it right. Same thing. I kept my eyes forward and focused on the trail.
+
+I tried to speed up. The sound sped up. I tried to slow down. It slowed. After about four hundred yards, I realized I couldn’t break the lock. Whatever was doing it had learned my rhythm. I felt a cold prickle at the base of my neck, the kind you get when you know you’re being watched but you can’t turn around to check. I told myself it was just fatigue. I’d been on my feet since dawn. The brain starts playing tricks when you’re alone in the dark with a repetitive task. I reached out and touched the cold bark of a hemlock to ground myself. I counted my steps. One, two, three. The sound counted with me.
+
+I stopped again. This time, I didn’t just pause. I froze. I stood completely still, breathing through my nose, listening. The forest was silent. No birds. No wind in the upper branches. Just the hum of my own blood in my ears. I waited ten seconds. Then I heard it. Not footsteps. Just a soft, wet drag, like a heavy branch being pulled across damp soil. It came from directly behind me. I didn’t turn. I knew, with a sudden, irrational certainty, that if I turned, I wouldn’t see a person. I wouldn’t see an animal. I’d see nothing, and then I’d hear it right in my ear. So I kept my shoulders square to the trail and started walking again.
+
+I changed my pace. I broke the rhythm completely. I took two quick steps, then a long stride, then a shuffle, then a hop over a root. I made myself walk like I was drunk. The sound faltered. It tried to match, but it couldn’t keep up with the chaos. It fell behind by a half-step. Then a full step. I kept it up. I varied my stride every three seconds. I didn’t look left. I didn’t look right. I just stared at the narrow ribbon of dirt ahead of me, counting my breaths, forcing my legs to move in uneven bursts.
+
+The rule hit me then, plain and simple. Don’t give it a rhythm to follow. If you walk steady, it learns it. If you match it, you’re locked in. I’d read enough trail logs and heard enough vague warnings from old rangers to know that the woods don’t like predictability. Animals rely on pattern. Humans rely on it too. But out past the second mile, past the point where the trail narrows and the brush grows thick, you stop being a person and you become a sound. And if you make a steady sound, something else will start making it too.
+
+I kept my gait broken for the next mile. My legs burned. My heart was hammering against my ribs. The headlamp beam cut through a fine mist that had settled in the hollows. Everything looked normal. Just trees, just dirt, just the occasional glint of a brass survey marker. But the air felt heavy. Pressurized. Like the canopy had dropped lower. Every few minutes, I’d catch the edge of movement in my peripheral vision. A shadow shifting between trunks. A shape that looked almost human but was too tall, or too narrow, or just slightly wrong in the shoulders. When I swung the light, there was only brush. When I stopped to check my GPS, the trail was empty. But the moment I put the device away and started walking again, the cadence would try to return. I’d break my stride, and it would fall back. I’d straighten out, and it would creep closer.
+
+I reached the third mile marker at 12:45 p.m. The trail started to descend. The trees opened up slightly. The light improved. I could see the gravel trailhead parking lot through the gaps in the lower branches, maybe six hundred yards down. I should have felt relief. I didn’t. I kept my pace erratic. I stumbled over roots on purpose. I dragged my left foot. I took wide, awkward steps. I didn’t look back. I didn’t look to the sides. I just focused on the gravel.
+
+When my boots hit the parking lot, I didn’t stop. I walked past my truck, around the back, and kept going until I was behind a cluster of pines where I could sit down and breathe. I sat there for twenty minutes. I checked my GPS track. It was clean. No anomalies. I checked my phone. No signal, like always. I listened. The forest was just a forest. Wind in the pines. A jay calling somewhere far off. Normal.
+
+I drove home. I showered. I put the gear away. I told myself it was just a trick of the acoustics. I told myself I’d imagined the pacing because I was tired and alone. I told myself a lot of things.
+
+I haven’t been back. I don’t plan to. But the woods take something with them, even when you leave. It’s not a memory. It’s a habit. I can’t walk at a steady pace anymore. I know it sounds strange, but it’s true. If I try to walk normally, my legs lock up. My breathing hitches. I have to force myself to vary my steps, to stumble, to break the rhythm, or I feel like I’m standing still while something else starts walking with me. I catch myself doing it in grocery stores, in hallways, on sidewalks. People stare. I don’t care. I just keep my stride broken.
+
+And at night, when the house is quiet and the heating system clicks off, I lie awake and listen. Not for footsteps. I know better than that. I listen for the silence between the sounds. I listen for the exact moment when the room stops echoing and starts pacing. I keep my breathing uneven. I shift my weight. I don’t let myself settle. Because if I do, if I let the rhythm take over, I know it’ll start matching me again. I know it’ll be there, just outside the door, or just behind the wall, or just in the dark at the foot of the bed, waiting for me to walk straight so it can walk with me.
+
+I’m sitting here now, writing this, and the floorboards are quiet. The house is still. I’m trying to type without my feet tapping. I’m trying to keep my breathing off-beat. But I can feel it starting. Just a slight pull in my calves. A rhythm trying to form. I’m going to stand up. I’m going to walk to the window. I’m going to make sure my steps are uneven. And if you’re reading this at night, in a quiet room, I’d advise you to check your own pace. Don’t let it settle. Don’t let it match. Because once it catches your rhythm, it never lets go. And you’ll be walking alone, but you’ll never be by yourself again.

@@ -1,0 +1,12 @@
+model,workload,prefill_tokens_s,decode_or_output_tokens_s,ttft_s,instrument,status
+GPT-OSS-120B,empty decode anchor,,83.30,,llama.cpp native,measured
+GPT-OSS-120B,49K depth,1057.00,54.70,46.410,llama.cpp native,measured
+GPT-OSS-120B,full 131K,1415.00,34.00,93.000,llama.cpp native,measured
+Laguna S 2.1,near-empty,,44.07,1.464,llama.cpp native,measured
+Laguna S 2.1,46.9K depth,414.05,34.95,113.242,llama.cpp native,measured
+Qwen3.6-27B-FP8,512 to 128 BF16,,49.45,0.249,vLLM TPOT-derived,measured campaign evidence
+Qwen3.6-27B-FP8,32K to 256 BF16,,46.49,16.660,vLLM TPOT-derived,measured campaign evidence
+Qwen3.6-27B-FP8,MTP C1,,69.53,0.053,vLLM aggregate output throughput,measured campaign evidence
+Qwen3.6-27B-FP8,MTP C8,,444.35,0.165,vLLM aggregate output throughput,measured campaign evidence
+Step 3.7 Flash,vanilla 745 to 512,204.72,28.11,3.743,llama.cpp native,measured
+Step 3.7 Flash,MTP 745 to 512,198.62,35.28,3.767,llama.cpp native,measured

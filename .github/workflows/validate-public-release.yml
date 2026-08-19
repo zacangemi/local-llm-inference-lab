@@ -1,0 +1,29 @@
+name: Validate public release
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  repository:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Validate privacy and data
+        run: python3 scripts/validate_public_release.py
+
+      - name: Regenerate charts
+        run: python3 scripts/generate_charts.py
+
+      - name: Require deterministic charts
+        run: git diff --exit-code -- charts

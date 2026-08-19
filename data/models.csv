@@ -1,0 +1,5 @@
+model,architecture,artifact,artifact_gib,total_parameters_b,active_parameters_b,backend,showcase_context_tokens,kv_cache,modality,placement
+GPT-OSS-120B,MoE,MXFP4 GGUF,59.02,116.8,5.1,llama.cpp,100000,Q8_0 K/V,text,hybrid CPU/GPU
+Laguna S 2.1,MoE,UD-Q4_K_XL GGUF,68.35,117.56,8.0,llama.cpp,100096,Q8_0 K/V,text,hybrid CPU/GPU auto-fit
+Qwen3.6-27B-FP8,dense,official block-FP8 weights,,27.0,27.0,vLLM TP2,100096,BF16,vision + text,fully GPU-resident
+Step 3.7 Flash,MoE,UD-Q4_K_XL GGUF,113.82,196.96,11.0,llama.cpp,90112,Q8_0 K/V,text + vision,heavy host offload

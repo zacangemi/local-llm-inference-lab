@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Shared capability outcomes</title>
+<desc id="desc">Outcome matrix for four models and four shared tests.</desc>
+<rect width="1200" height="650" rx="24" fill="#08111f"/>
+<text x="50" y="55" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="30" font-weight="850" text-anchor="start">Healthy inference did not guarantee a finished product</text>
+<text x="50" y="84" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="500" text-anchor="start">Artifact outcomes include runtime and operator inspection.</text>
+<text x="392.5" y="115" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="750" text-anchor="middle">GPT-OSS-120B</text>
+<text x="607.5" y="115" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="750" text-anchor="middle">Laguna S 2.1</text>
+<text x="822.5" y="115" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="750" text-anchor="middle">Qwen3.6-27B-FP8</text>
+<text x="1037.5" y="115" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="750" text-anchor="middle">Step 3.7 Flash</text>
+<text x="45" y="190" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="start">Hardware Exam</text>
+<rect x="292" y="143" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="392.5" y="191" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="507" y="143" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="607.5" y="191" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="722" y="143" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="822.5" y="191" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="937" y="143" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="1037.5" y="191" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<text x="45" y="282" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="start">Horror Story</text>
+<rect x="292" y="235" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="392.5" y="283" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="507" y="235" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="607.5" y="283" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="722" y="235" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="822.5" y="283" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="937" y="235" width="201" height="76" rx="13" fill="#34d399" fill-opacity="0.18" stroke="#34d399"/>
+<text x="1037.5" y="283" fill="#34d399" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PASS</text>
+<text x="45" y="374" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="start">Surf Simulator</text>
+<rect x="292" y="327" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="392.5" y="375" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="507" y="327" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="607.5" y="375" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="722" y="327" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="822.5" y="375" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="937" y="327" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="1037.5" y="375" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<text x="45" y="466" fill="#f8fafc" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="700" text-anchor="start">Digital Twin</text>
+<rect x="292" y="419" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="392.5" y="467" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="507" y="419" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="607.5" y="467" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<rect x="722" y="419" width="201" height="76" rx="13" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24"/>
+<text x="822.5" y="467" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">PARTIAL</text>
+<rect x="937" y="419" width="201" height="76" rx="13" fill="#fb7185" fill-opacity="0.18" stroke="#fb7185"/>
+<text x="1037.5" y="467" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="850" text-anchor="middle">FAIL</text>
+<text x="600" y="555" fill="#aab8cc" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="650" text-anchor="middle">Step&#x27;s story was the operator favorite. Qwen shipped the only Twin that ran as submitted.</text>
+<text x="600" y="582" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="750" text-anchor="middle">No Surf Simulator fully passed. No faithful finished Digital Twin was produced.</text>
+</svg>

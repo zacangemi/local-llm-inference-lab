@@ -1,0 +1,5 @@
+model,mode,gpu0_main_mib,gpu1_main_mib,host_main_mib,additional_artifact,minimum_host_available_gib
+Laguna S 2.1,selected auto-fit,20130.63,19389.34,30471.56,Q8 KV approximately 2.57 GiB,89.3
+Step 3.7 Flash,vanilla,19840.73,19490.41,77220.28,none,37.1
+Step 3.7 Flash,MTP-only,19840.73,15245.29,81465.41,draft 2995.57 MiB GPU + 534.97 MiB host,37.1
+Step 3.7 Flash,vision-only,15284.24,18826.91,82440.28,projector reserve 3925.03 MiB,37.1

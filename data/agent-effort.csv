@@ -1,0 +1,5 @@
+model,surf_requests,surf_output_tokens,surf_wall_minutes,twin_requests,twin_output_tokens,twin_wall_minutes
+GPT-OSS-120B,7,5074,,8,5157,
+Laguna S 2.1,103,129544,93.0,15,36995,
+Qwen3.6-27B-FP8,31,78225,33.6,121,95834,55.0
+Step 3.7 Flash,45,39646,,179,110956,102.0

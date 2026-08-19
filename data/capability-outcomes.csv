@@ -1,0 +1,5 @@
+test,GPT-OSS-120B,Laguna S 2.1,Qwen3.6-27B-FP8,Step 3.7 Flash
+Hardware Exam,fail,fail,fail,fail
+Horror Story,partial,partial,partial,pass
+Surf Simulator,fail,partial,partial,partial
+Digital Twin,fail,fail,partial,fail

@@ -1,0 +1,48 @@
+# Python and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Raw laboratory evidence is intentionally private. These trees contain
+# machine paths, operational telemetry, service bindings, and large run data.
+analysis/
+fixtures/
+harness/
+methodology/
+schemas/
+tests/
+tools/
+
+# Internal prompt-development material remains private.
+prompts/
+
+# Never publish raw result bundles, logs, traces, captures, or model artifacts.
+results/
+runs/
+raw/
+artifacts/
+captures/
+*.log
+*.jsonl
+*.sse
+*.gguf
+*.safetensors
+
+# Temporary publication work
+dist/
+tmp/

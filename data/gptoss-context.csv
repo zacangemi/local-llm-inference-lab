@@ -1,0 +1,6 @@
+context_tokens,decode_tokens_s,instrument
+0,83.30,llama-bench native
+8192,77.55,llama-bench native
+32768,63.75,llama-bench native
+49000,54.70,llama.cpp server native
+130816,34.00,llama-bench native

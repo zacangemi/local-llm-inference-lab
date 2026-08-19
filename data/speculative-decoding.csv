@@ -1,0 +1,4 @@
+model,concurrency,metric,parent_tokens_s,mtp_tokens_s,uplift_percent,acceptance_percent,e2e_reduction_percent,kv_capacity_change_percent,status
+Qwen3.6-27B-FP8,1,output throughput,49.14,69.53,41.49,85.99,28.83,-4.98,measured campaign evidence
+Qwen3.6-27B-FP8,8,aggregate output throughput,320.75,444.35,38.53,86.88,28.81,-4.98,measured campaign evidence
+Step 3.7 Flash,1,native fixed-work decode,28.11,35.28,25.50,87.70,16.82,,measured

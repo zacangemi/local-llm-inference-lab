@@ -1,0 +1,777 @@
+<style>
+  .zc-model-lab {
+    --zc-bg: #08111f;
+    --zc-panel: #111d30;
+    --zc-line: rgba(148, 163, 184, 0.24);
+    --zc-text: #f8fafc;
+    --zc-muted: #aab8cc;
+    --zc-blue: #38bdf8;
+    --zc-purple: #a78bfa;
+    --zc-gold: #fbbf24;
+    --zc-green: #34d399;
+    --zc-red: #fb7185;
+    width: 100%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    color: var(--zc-text);
+    font-family: inherit;
+    line-height: 1.5;
+  }
+
+  .zc-model-lab *,
+  .zc-model-lab *::before,
+  .zc-model-lab *::after {
+    box-sizing: border-box;
+  }
+
+  .zc-model-panel {
+    margin: 0 0 2rem;
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid var(--zc-line);
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(56, 189, 248, 0.11), transparent 34%),
+      radial-gradient(circle at 0% 100%, rgba(167, 139, 250, 0.09), transparent 38%),
+      var(--zc-bg);
+    overflow: hidden;
+  }
+
+  .zc-model-kicker {
+    margin: 0 0 0.45rem;
+    color: var(--zc-blue);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .zc-model-panel h3 {
+    margin: 0;
+    color: var(--zc-text);
+    font-size: clamp(1.45rem, 4vw, 2.25rem);
+    line-height: 1.1;
+  }
+
+  .zc-model-deck {
+    max-width: 820px;
+    margin: 0.65rem 0 1.25rem;
+    color: var(--zc-muted);
+    font-size: 0.92rem;
+  }
+
+  .zc-model-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin: 1rem 0 1.25rem;
+  }
+
+  .zc-model-card {
+    padding: 1rem;
+    border: 1px solid var(--zc-line);
+    border-radius: 14px;
+    background: rgba(17, 29, 48, 0.82);
+  }
+
+  .zc-model-card strong {
+    display: block;
+    margin-bottom: 0.18rem;
+    color: var(--zc-text);
+    font-size: clamp(1.25rem, 3vw, 1.9rem);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .zc-model-card span {
+    display: block;
+    color: var(--zc-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+
+  .zc-model-scroll {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .zc-model-table {
+    width: 100%;
+    min-width: 820px;
+    border: 1px solid var(--zc-line);
+    border-collapse: collapse;
+    background: rgba(17, 29, 48, 0.72);
+    color: var(--zc-text);
+    font-size: 0.86rem;
+  }
+
+  .zc-model-table th,
+  .zc-model-table td {
+    padding: 0.78rem 0.85rem;
+    border-top: 1px solid var(--zc-line);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .zc-model-table th {
+    border-top: 0;
+    background: rgba(56, 189, 248, 0.09);
+    color: #dbeafe;
+    font-size: 0.72rem;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+  }
+
+  .zc-model-num {
+    text-align: right !important;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .zc-model-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .zc-model-subpanel {
+    padding: 1rem;
+    border: 1px solid var(--zc-line);
+    border-radius: 14px;
+    background: rgba(17, 29, 48, 0.74);
+  }
+
+  .zc-model-subpanel h4 {
+    margin: 0 0 0.85rem;
+    color: var(--zc-text);
+    font-size: 1rem;
+  }
+
+  .zc-model-meter-row {
+    display: grid;
+    grid-template-columns: 72px 1fr 72px;
+    gap: 0.6rem;
+    align-items: center;
+    margin: 0.62rem 0;
+    font-size: 0.78rem;
+  }
+
+  .zc-model-meter {
+    height: 12px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #25344b;
+  }
+
+  .zc-model-meter > span {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--zc-blue), var(--zc-purple));
+  }
+
+  .zc-model-placement {
+    margin: 0.85rem 0 1.15rem;
+  }
+
+  .zc-model-placement-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.35rem;
+    color: var(--zc-muted);
+    font-size: 0.78rem;
+  }
+
+  .zc-model-stack {
+    display: flex;
+    width: 100%;
+    height: 28px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #25344b;
+  }
+
+  .zc-model-stack span {
+    display: block;
+    height: 100%;
+  }
+
+  .zc-model-gpu0 {
+    background: var(--zc-blue);
+  }
+
+  .zc-model-gpu1 {
+    background: var(--zc-purple);
+  }
+
+  .zc-model-host {
+    background: var(--zc-gold);
+  }
+
+  .zc-model-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.2rem;
+    margin-top: 0.8rem;
+    color: var(--zc-muted);
+    font-size: 0.76rem;
+  }
+
+  .zc-model-dot {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.35rem;
+    border-radius: 999px;
+  }
+
+  .zc-model-mtp {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .zc-model-mtp-card {
+    padding: 1rem;
+    border: 1px solid var(--zc-line);
+    border-radius: 14px;
+    background: rgba(17, 29, 48, 0.78);
+  }
+
+  .zc-model-mtp-card h4 {
+    margin: 0 0 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .zc-model-before-after {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0.55rem;
+    align-items: center;
+  }
+
+  .zc-model-before-after div {
+    padding: 0.75rem 0.45rem;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(148, 163, 184, 0.09);
+  }
+
+  .zc-model-before-after strong {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  .zc-model-before-after span {
+    color: var(--zc-muted);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+  }
+
+  .zc-model-arrow {
+    color: var(--zc-green);
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  .zc-model-uplift {
+    margin: 0.75rem 0 0;
+    color: var(--zc-green);
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .zc-model-matrix {
+    display: grid;
+    grid-template-columns: minmax(130px, 0.85fr) repeat(4, minmax(120px, 1fr));
+    gap: 0.45rem;
+    min-width: 800px;
+  }
+
+  .zc-model-matrix > div {
+    display: flex;
+    min-height: 64px;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem;
+    border: 1px solid var(--zc-line);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.77rem;
+  }
+
+  .zc-model-matrix .zc-model-head {
+    min-height: 42px;
+    color: var(--zc-muted);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+  }
+
+  .zc-model-matrix .zc-model-rowhead {
+    justify-content: flex-start;
+    color: var(--zc-text);
+    font-weight: 750;
+  }
+
+  .zc-model-pass {
+    color: var(--zc-green);
+    background: rgba(52, 211, 153, 0.1);
+  }
+
+  .zc-model-partial {
+    color: var(--zc-gold);
+    background: rgba(251, 191, 36, 0.1);
+  }
+
+  .zc-model-fail {
+    color: var(--zc-red);
+    background: rgba(251, 113, 133, 0.1);
+  }
+
+  .zc-model-effort-row {
+    display: grid;
+    grid-template-columns: minmax(130px, 0.65fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .zc-model-effort-row > strong {
+    font-size: 0.82rem;
+  }
+
+  .zc-model-effort-bars {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .zc-model-effort-bar {
+    position: relative;
+    min-width: 110px;
+    height: 28px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #25344b;
+  }
+
+  .zc-model-effort-bar span {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 0.65rem;
+    color: #06101e;
+    font-size: 0.72rem;
+    font-weight: 850;
+    white-space: nowrap;
+  }
+
+  .zc-model-effort-bar--surf span {
+    background: var(--zc-blue);
+  }
+
+  .zc-model-effort-bar--twin span {
+    background: var(--zc-purple);
+  }
+
+  .zc-model-callout {
+    margin: 1rem 0 0;
+    padding: 0.9rem 1rem;
+    border-left: 4px solid var(--zc-gold);
+    border-radius: 0 10px 10px 0;
+    background: rgba(251, 191, 36, 0.08);
+    color: #dce6f3;
+    font-size: 0.83rem;
+  }
+
+  @media (max-width: 760px) {
+    .zc-model-cards,
+    .zc-model-mtp {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .zc-model-grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .zc-model-scroll::before {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--zc-muted);
+      content: "Swipe horizontally to view the complete chart.";
+      font-size: 0.74rem;
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .zc-model-cards,
+    .zc-model-mtp {
+      grid-template-columns: 1fr;
+    }
+
+    .zc-model-effort-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- CHART 1: CAMPAIGN AT A GLANCE -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Four models · two backends · one machine</p>
+    <h3>The Local Model Gauntlet</h3>
+    <p class="zc-model-deck">
+      Dense GPU-resident inference, hybrid CPU/GPU MoE inference, long context,
+      MTP, vision, and four shared capability tests.
+    </p>
+
+    <div class="zc-model-cards">
+      <div class="zc-model-card">
+        <strong>4</strong>
+        <span>Models tested</span>
+      </div>
+      <div class="zc-model-card">
+        <strong>48 GB</strong>
+        <span>Physical VRAM</span>
+      </div>
+      <div class="zc-model-card">
+        <strong>131K</strong>
+        <span>Largest context passed</span>
+      </div>
+      <div class="zc-model-card">
+        <strong>113.82 GiB</strong>
+        <span>Largest artifact</span>
+      </div>
+    </div>
+
+    <div class="zc-model-scroll">
+      <table class="zc-model-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Architecture</th>
+            <th>Backend</th>
+            <th>Context</th>
+            <th>Role in campaign</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GPT-OSS-120B</td>
+            <td>116.8B / 5.1B active MoE</td>
+            <td>llama.cpp</td>
+            <td>131K maximum</td>
+            <td>Hybrid performance and long-context anchor</td>
+          </tr>
+          <tr>
+            <td>Laguna S 2.1</td>
+            <td>117.56B / about 8B active MoE</td>
+            <td>llama.cpp</td>
+            <td>100K</td>
+            <td>Agent-focused hybrid model</td>
+          </tr>
+          <tr>
+            <td>Qwen3.6-27B-FP8</td>
+            <td>27B dense</td>
+            <td>vLLM TP=2</td>
+            <td>100K showcase</td>
+            <td>Fully GPU-resident serving control</td>
+          </tr>
+          <tr>
+            <td>Step 3.7 Flash</td>
+            <td>196.96B / 11B active MoE</td>
+            <td>llama.cpp</td>
+            <td>90K</td>
+            <td>Capacity-ceiling test</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CHART 2: MODEL PLACEMENT -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Main model buffers</p>
+    <h3>Where the oversized models lived</h3>
+    <p class="zc-model-deck">
+      Bar scale is 120 GiB. Sidecars and KV cache are not included in these
+      main-buffer segments.
+    </p>
+
+    <div class="zc-model-placement">
+      <div class="zc-model-placement-label">
+        <span>Laguna · selected auto-fit</span>
+        <strong>68.35 GiB</strong>
+      </div>
+      <div class="zc-model-stack">
+        <span class="zc-model-gpu0" style="width:16.39%"></span>
+        <span class="zc-model-gpu1" style="width:15.78%"></span>
+        <span class="zc-model-host" style="width:24.80%"></span>
+      </div>
+    </div>
+
+    <div class="zc-model-placement">
+      <div class="zc-model-placement-label">
+        <span>Step · vanilla</span>
+        <strong>113.82 GiB</strong>
+      </div>
+      <div class="zc-model-stack">
+        <span class="zc-model-gpu0" style="width:16.15%"></span>
+        <span class="zc-model-gpu1" style="width:15.86%"></span>
+        <span class="zc-model-host" style="width:62.84%"></span>
+      </div>
+    </div>
+
+    <div class="zc-model-placement">
+      <div class="zc-model-placement-label">
+        <span>Step · MTP mode</span>
+        <strong>113.82 GiB main model</strong>
+      </div>
+      <div class="zc-model-stack">
+        <span class="zc-model-gpu0" style="width:16.15%"></span>
+        <span class="zc-model-gpu1" style="width:12.41%"></span>
+        <span class="zc-model-host" style="width:66.30%"></span>
+      </div>
+    </div>
+
+    <div class="zc-model-legend">
+      <span><i class="zc-model-dot zc-model-gpu0"></i>GPU 0 main weights</span>
+      <span><i class="zc-model-dot zc-model-gpu1"></i>GPU 1 main weights</span>
+      <span><i class="zc-model-dot zc-model-host"></i>Host main weights</span>
+    </div>
+
+    <p class="zc-model-callout">
+      The 48 GB of physical VRAM did not define total model capacity. Architecture,
+      quantization, system memory, and backend placement determined what could run.
+    </p>
+  </div>
+</section>
+
+<!-- CHART 3: CONTEXT AND DECODE -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Context scaling</p>
+    <h3>Generation remained usable deep into context</h3>
+    <p class="zc-model-deck">
+      GPT-OSS uses llama.cpp native timing. Qwen uses vLLM TPOT-derived
+      generation. The panels are separate because the timing instruments differ.
+    </p>
+
+    <div class="zc-model-grid-2">
+      <div class="zc-model-subpanel">
+        <h4>GPT-OSS-120B · llama.cpp native</h4>
+        <div class="zc-model-meter-row">
+          <span>Empty</span>
+          <div class="zc-model-meter"><span style="width:83.3%"></span></div>
+          <strong class="zc-model-num">83.3 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>8K</span>
+          <div class="zc-model-meter"><span style="width:77.6%"></span></div>
+          <strong class="zc-model-num">77.6 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>32K</span>
+          <div class="zc-model-meter"><span style="width:63.8%"></span></div>
+          <strong class="zc-model-num">63.8 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>49K</span>
+          <div class="zc-model-meter"><span style="width:54.7%"></span></div>
+          <strong class="zc-model-num">54.7 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>131K</span>
+          <div class="zc-model-meter"><span style="width:34%"></span></div>
+          <strong class="zc-model-num">34.0 t/s</strong>
+        </div>
+      </div>
+
+      <div class="zc-model-subpanel">
+        <h4>Qwen3.6-27B-FP8 · vLLM TPOT</h4>
+        <div class="zc-model-meter-row">
+          <span>512</span>
+          <div class="zc-model-meter"><span style="width:49.45%"></span></div>
+          <strong class="zc-model-num">49.45 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>2K</span>
+          <div class="zc-model-meter"><span style="width:49.45%"></span></div>
+          <strong class="zc-model-num">49.45 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>8K</span>
+          <div class="zc-model-meter"><span style="width:48.57%"></span></div>
+          <strong class="zc-model-num">48.57 t/s</strong>
+        </div>
+        <div class="zc-model-meter-row">
+          <span>32K</span>
+          <div class="zc-model-meter"><span style="width:46.49%"></span></div>
+          <strong class="zc-model-num">46.49 t/s</strong>
+        </div>
+      </div>
+    </div>
+
+    <p class="zc-model-callout">
+      These are deployment-specific results, not a cross-backend speed leaderboard.
+    </p>
+  </div>
+</section>
+
+<!-- CHART 4: MTP -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Speculative decoding</p>
+    <h3>MTP delivered the largest clean speedups</h3>
+    <p class="zc-model-deck">
+      Parent and MTP values are matched within the same model, workload, and
+      timing instrument.
+    </p>
+
+    <div class="zc-model-mtp">
+      <div class="zc-model-mtp-card">
+        <h4>Qwen · concurrency 1</h4>
+        <div class="zc-model-before-after">
+          <div><strong>49.14</strong><span>Parent t/s</span></div>
+          <b class="zc-model-arrow">→</b>
+          <div><strong>69.53</strong><span>MTP t/s</span></div>
+        </div>
+        <p class="zc-model-uplift">+41.49% · 85.99% accepted</p>
+      </div>
+
+      <div class="zc-model-mtp-card">
+        <h4>Qwen · concurrency 8</h4>
+        <div class="zc-model-before-after">
+          <div><strong>320.75</strong><span>Parent aggregate</span></div>
+          <b class="zc-model-arrow">→</b>
+          <div><strong>444.35</strong><span>MTP aggregate</span></div>
+        </div>
+        <p class="zc-model-uplift">+38.53% · 86.88% accepted</p>
+      </div>
+
+      <div class="zc-model-mtp-card">
+        <h4>Step · fixed-work decode</h4>
+        <div class="zc-model-before-after">
+          <div><strong>28.11</strong><span>Vanilla t/s</span></div>
+          <b class="zc-model-arrow">→</b>
+          <div><strong>35.28</strong><span>MTP t/s</span></div>
+        </div>
+        <p class="zc-model-uplift">+25.50% · 87.70% accepted</p>
+      </div>
+    </div>
+
+    <p class="zc-model-callout">
+      Qwen concurrency-eight values are aggregate output throughput, not
+      single-request generation speed.
+    </p>
+  </div>
+</section>
+
+<!-- CHART 5: CAPABILITY MATRIX -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Shared four-test showcase</p>
+    <h3>The machine finished. The models often did not.</h3>
+    <p class="zc-model-deck">
+      Outcomes combine submitted runtime behavior, contract compliance, and
+      operator artifact inspection. Diagnostic repairs never become passes.
+    </p>
+
+    <div class="zc-model-scroll">
+      <div class="zc-model-matrix">
+        <div class="zc-model-head"></div>
+        <div class="zc-model-head">GPT-OSS</div>
+        <div class="zc-model-head">Laguna</div>
+        <div class="zc-model-head">Qwen</div>
+        <div class="zc-model-head">Step</div>
+
+        <div class="zc-model-rowhead">Hardware Exam</div>
+        <div class="zc-model-fail">Fail</div>
+        <div class="zc-model-fail">Fail</div>
+        <div class="zc-model-fail">Fail</div>
+        <div class="zc-model-fail">Fail</div>
+
+        <div class="zc-model-rowhead">Horror Story</div>
+        <div class="zc-model-partial">Strong; continuity errors</div>
+        <div class="zc-model-partial">Strong; over length</div>
+        <div class="zc-model-partial">Strong; 22 words over</div>
+        <div class="zc-model-pass">Operator favorite</div>
+
+        <div class="zc-model-rowhead">Surf Simulator</div>
+        <div class="zc-model-fail">Non-executing</div>
+        <div class="zc-model-partial">Runnable partial; gameplay failed</div>
+        <div class="zc-model-partial">Strong partial; no surfable wave</div>
+        <div class="zc-model-partial">Best design; gameplay failed</div>
+
+        <div class="zc-model-rowhead">Digital Twin</div>
+        <div class="zc-model-fail">Failed as submitted</div>
+        <div class="zc-model-fail">No application</div>
+        <div class="zc-model-partial">Only app that ran as submitted</div>
+        <div class="zc-model-fail">Broken submission; best latent design</div>
+      </div>
+    </div>
+
+    <p class="zc-model-callout">
+      No Surf Simulator fully passed. No model produced a faithful finished
+      Digital Twin. Every Hardware Exam answer was technically unreliable.
+    </p>
+  </div>
+</section>
+
+<!-- CHART 6: AGENT EFFORT -->
+<section class="zc-model-lab">
+  <div class="zc-model-panel">
+    <p class="zc-model-kicker">Build-agent effort</p>
+    <h3>More tokens did not guarantee completion</h3>
+    <p class="zc-model-deck">
+      Bar lengths use a logarithmic presentation so the smallest and largest
+      sessions remain visible. Labels show exact output-token totals.
+    </p>
+
+    <div class="zc-model-effort-row">
+      <strong>GPT-OSS-120B</strong>
+      <div class="zc-model-effort-bars">
+        <div class="zc-model-effort-bar zc-model-effort-bar--surf"><span style="width:55%">Surf · 5,074</span></div>
+        <div class="zc-model-effort-bar zc-model-effort-bar--twin"><span style="width:55%">Twin · 5,157</span></div>
+      </div>
+    </div>
+
+    <div class="zc-model-effort-row">
+      <strong>Laguna S 2.1</strong>
+      <div class="zc-model-effort-bars">
+        <div class="zc-model-effort-bar zc-model-effort-bar--surf"><span style="width:99%">Surf · 129,544 · about 93 min</span></div>
+        <div class="zc-model-effort-bar zc-model-effort-bar--twin"><span style="width:86%">Twin · 36,995</span></div>
+      </div>
+    </div>
+
+    <div class="zc-model-effort-row">
+      <strong>Qwen3.6-27B-FP8</strong>
+      <div class="zc-model-effort-bars">
+        <div class="zc-model-effort-bar zc-model-effort-bar--surf"><span style="width:94%">Surf · 78,225 · 33.6 min</span></div>
+        <div class="zc-model-effort-bar zc-model-effort-bar--twin"><span style="width:97%">Twin · 95,834 · 55 min</span></div>
+      </div>
+    </div>
+
+    <div class="zc-model-effort-row">
+      <strong>Step 3.7 Flash</strong>
+      <div class="zc-model-effort-bars">
+        <div class="zc-model-effort-bar zc-model-effort-bar--surf"><span style="width:87%">Surf · 39,646</span></div>
+        <div class="zc-model-effort-bar zc-model-effort-bar--twin"><span style="width:98%">Twin · 110,956 · about 102 min</span></div>
+      </div>
+    </div>
+
+    <p class="zc-model-callout">
+      GPT-OSS stopped prematurely. Laguna and Step spent heavily without
+      shipping the requested products. Qwen showed the best practical balance.
+    </p>
+  </div>
+</section>

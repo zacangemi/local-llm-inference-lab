@@ -1,0 +1,17 @@
+model,test,requests,median_ttft_s,median_ttfat_s,median_e2e_s,rate_tokens_s,rate_instrument,output_tokens,agent_wall_minutes,outcome
+GPT-OSS-120B,Hardware Exam,1,1.955,2.868,82.050,72.4,llama.cpp native decode,5803,,fail
+GPT-OSS-120B,Horror Story,1,2.015,15.211,39.420,74.0,llama.cpp native decode,2773,,partial
+GPT-OSS-120B,Surf Simulator,7,0.947,6.935,9.571,70.5,llama.cpp native decode,5074,,fail
+GPT-OSS-120B,Digital Twin,8,1.074,2.609,7.434,66.1,llama.cpp native decode,5157,,fail
+Laguna S 2.1,Hardware Exam,1,3.021,3.021,36.979,41.7,llama.cpp native decode,1417,,fail
+Laguna S 2.1,Horror Story,1,4.152,4.152,58.621,41.4,llama.cpp native decode,2257,,partial
+Laguna S 2.1,Surf Simulator,103,1.378,18.236,22.361,34.9,llama.cpp native decode,129544,93.0,partial
+Laguna S 2.1,Digital Twin,15,2.755,6.308,13.882,37.5,llama.cpp native decode,36995,,fail
+Qwen3.6-27B-FP8,Hardware Exam,1,0.888,145.962,192.302,47.9,gateway client output rate,9162,3.2,fail
+Qwen3.6-27B-FP8,Horror Story,1,0.825,105.740,149.998,47.9,gateway client output rate,7148,2.5,partial
+Qwen3.6-27B-FP8,Surf Simulator,31,0.544,1.974,7.996,46.1,gateway client output rate,78225,33.6,partial
+Qwen3.6-27B-FP8,Digital Twin,121,0.533,3.835,8.016,43.9,gateway client output rate,95834,55.0,partial
+Step 3.7 Flash,Hardware Exam,1,6.732,767.026,842.730,32.3,llama.cpp native decode,26979,14.0,fail
+Step 3.7 Flash,Horror Story,1,6.736,282.292,334.332,35.2,llama.cpp native decode,11532,5.6,pass
+Step 3.7 Flash,Surf Simulator,45,1.715,7.791,15.214,34.7,llama.cpp native decode,39646,,partial
+Step 3.7 Flash,Digital Twin,179,,,,,mixed attempts,110956,102.0,fail
