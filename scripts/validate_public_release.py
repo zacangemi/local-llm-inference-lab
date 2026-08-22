@@ -14,6 +14,7 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 TEXT_SUFFIXES = {".md", ".csv", ".py", ".yml", ".yaml", ".html", ".svg", ".txt"}
 DISALLOWED_SUFFIXES = {".log", ".jsonl", ".sse", ".gguf", ".safetensors", ".pem", ".key", ".p12", ".pfx"}
+SAFE_COMMIT_EMAIL_SUFFIXES = ("@users.noreply.github.com", "@github.com")
 
 PRIVATE_HOME = "/" + "home" + "/"
 PRIVATE_HOST = "zai" + "server"
@@ -120,6 +121,30 @@ def validate_relative_links(paths: list[Path]) -> list[str]:
     return errors
 
 
+def validate_git_metadata() -> list[str]:
+    if not (ROOT / ".git").is_dir():
+        return []
+    errors: list[str] = []
+    try:
+        result = subprocess.run(
+            ["git", "log", "--all", "--format=%H%x09%ae%x09%ce"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError) as exc:
+        return [f"unable to inspect Git metadata: {exc}"]
+
+    for line in result.stdout.splitlines():
+        commit, author_email, committer_email = line.split("\t", 2)
+        for role, email in (("author", author_email), ("committer", committer_email)):
+            normalized = email.strip().lower()
+            if normalized and not normalized.endswith(SAFE_COMMIT_EMAIL_SUFFIXES):
+                errors.append(f"{commit}: {role} email is not privacy-preserving")
+    return errors
+
+
 def read_csv(name: str) -> list[dict[str, str]]:
     with (ROOT / name).open(newline="", encoding="utf-8") as handle:
         return list(csv.DictReader(handle))
@@ -180,6 +205,7 @@ def main() -> int:
     rels = {str(path.relative_to(ROOT)) for path in paths}
     errors = [f"missing required file: {name}" for name in sorted(REQUIRED - rels)]
     errors.extend(scan_privacy(paths))
+    errors.extend(validate_git_metadata())
     errors.extend(validate_relative_links(paths))
     errors.extend(validate_data())
 
